@@ -1,0 +1,14 @@
+nav{
+    height: 7vh;
+    background-color: var(--background-nav);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 2rem;
+    color: var(--font-color-title);
+    font-family: var(--font-color-title);
+    font-weight: bold;
+}

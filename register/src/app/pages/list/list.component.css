@@ -1,0 +1,74 @@
+tr, .search-data{
+    display: flex;
+    justify-content: space-between;   
+}
+
+table{
+    width: 100%;      
+}
+
+tr{
+    height: 100%;
+    align-items: center;
+    border: 1px solid var(--border-input);    
+}
+
+td{
+    width: 20%;
+    list-style: none;
+    font-size: var(--font-family);
+    font-weight: bold;
+    font-size: 1.2rem;   
+    margin-top: 20px;     
+}
+
+.search-data,.table-register{
+    margin: 20px 10px;
+}
+
+input{    
+    width: 30vw;
+    height: 30px;
+    border: 2px solid var(--border-input);
+}
+
+.btn-register{
+    height: 40px;
+    width: 120px;  
+    background-color: var(--background-btn-register);
+    color: var(--font-color-title); 
+    font-weight: var(--font-family); 
+    font-size: 1.2rem;
+    font-weight: bold;  
+    border: none; 
+}
+
+input,button{
+    border-radius: 10px;     
+}
+
+.list-register{
+    height: 5vh;
+    background-color: var(--backgrounf-color-li);
+   
+}
+
+.btn-edit,.btn-delete{
+    height: 40px;
+    width: 80px; 
+    margin: 5px;     
+    font-weight: var(--font-family); 
+    font-size: 1.2rem;
+    font-weight: bold;  
+    border: none;
+}
+
+.btn-edit{
+    color: var(--color-btn-edit);
+    border: 1px solid var(--color-btn-edit);
+}
+
+.btn-delete{
+    color: var(--color-btn-delete);
+    border: 1px solid var(--color-btn-delete);
+}
