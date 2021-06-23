@@ -1,0 +1,15 @@
+form{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-first{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-second{
+    display: flex;
+    flex-direction: column;
+}
+
