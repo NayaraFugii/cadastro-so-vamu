@@ -9,6 +9,6 @@ nav{
 h1{
     font-size: 2rem;
     color: var(--font-color-title);
-    font-family: var(--font-color-title);
+    font-family: var(--font-family-navbar);
     font-weight: bold;
 }

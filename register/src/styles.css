@@ -9,12 +9,13 @@ html, body{
 }
 
 :root {
-    --background-nav: rgb(42, 186, 230);
+    --background-nav: #54565B;
     --color-btn-edit:rgb(42, 186, 230);
     --color-btn-delete: rgb(238, 68, 68);
-    --backgrounf-color-li:rgb(172, 225, 241);
+    --backgrounf-color-li:#939598;
     --background-btn-register:rgb(15, 170, 28);
-    --font-color-title: white;
+    --font-color-title:#FAF8EB;
     --border-input: gray;
+    --font-family-navbar: 'Rajdhani', sans-serif;;
     --font-family:Arial, Helvetica, sans-serif;
 }

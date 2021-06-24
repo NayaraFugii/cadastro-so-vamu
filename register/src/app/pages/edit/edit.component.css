@@ -35,21 +35,21 @@ label{
     font-weight: bold;
 }
 
-.btn-back,.btn-save{
+.btn-cancel,.btn-save{
     height: 50px;
-    width: 100px;
+    width: 100px; 
     margin: 5px;     
     font-weight: var(--font-family); 
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;  
     border: none;
     border-radius: 10px;
     margin-top: 50vh;
 }
 
-.btn-back{
-    color: var(--color-btn-edit);
-    border: 1px solid var(--color-btn-edit);
+.btn-cancel{
+    color: var(--color-btn-delete);
+    border: 1px solid var(--color-btn-delete);
 }
 
 .btn-save{

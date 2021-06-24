@@ -1,27 +1,27 @@
 <div class="container-form">
-  <form action="">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
 
     <div class="container-first">
       <label for="">Nome</label>
-        <input type="text">
+        <input type="text" formControlName="name">
       <label for="">Profissão</label>
-        <input type="text">
+        <input type="text" formControlName="profession">
       <label for="">Peso</label>
-        <input type="text">
+        <input type="text" formControlName="weight">
     </div>
 
     <div class="container-second">
       <label for="">Idade</label>
-      <input type="text">
+      <input type="text" formControlName="year">
     <label for="">Cidade de Nascimento</label>
-      <input type="text">
+      <input type="text" formControlName="city">
     <label for="">Aniversário</label>
-      <input type="text">
+      <input type="date" formControlName="birthday">
     </div>
 
     <div class="container-third">
-      <button>Voltar</button>
-      <button>Salvar</button>
+      <a class="btn-back" routerLink="/" type="">Voltar</a>
+      <button class ="btn-save" (click)="createNewRegister()">Salvar</button>
     </div> 
 
   </form>

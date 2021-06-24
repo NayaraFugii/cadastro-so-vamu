@@ -10,7 +10,7 @@ table{
 tr{
     height: 100%;
     align-items: center;
-    border: 1px solid var(--border-input);    
+    border: 1px solid var(--border-input);  
 }
 
 td{
@@ -19,7 +19,8 @@ td{
     font-size: var(--font-family);
     font-weight: bold;
     font-size: 1.2rem;   
-    margin-top: 20px;     
+    margin-top: 20px; 
+    margin-left: 10px;    
 }
 
 .search-data,.table-register{
@@ -37,38 +38,54 @@ input{
     width: 120px;  
     background-color: var(--background-btn-register);
     color: var(--font-color-title); 
-    font-weight: var(--font-family); 
     font-size: 1.2rem;
     font-weight: bold;  
     border: none; 
-}
-
-input,button{
-    border-radius: 10px;     
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .list-register{
     height: 5vh;
     background-color: var(--backgrounf-color-li);
+    color: var(--font-color-title);
+    align-items: center;
    
 }
+.list-register td{
+    font-size: 1.3rem;
+}
 
-.btn-edit,.btn-delete{
+.btn-delete{
     height: 40px;
     width: 80px; 
     margin: 5px;     
-    font-weight: var(--font-family); 
     font-size: 1.2rem;
     font-weight: bold;  
     border: none;
 }
 
-.btn-edit{
-    color: var(--color-btn-edit);
+.btn-edit{    
+    color: var(--color-btn-edit);   
     border: 1px solid var(--color-btn-edit);
+    padding: 1vh;
+   
 }
 
 .btn-delete{
     color: var(--color-btn-delete);
     border: 1px solid var(--color-btn-delete);
+    background-color: white;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+.btn-delete, .btn-edit,.btn-register, input{
+    cursor: pointer;
+    font-family: var(--font-family);
+    border-radius: 10px;
 }

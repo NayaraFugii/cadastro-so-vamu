@@ -1,6 +1,6 @@
 <div class="search-data">
   <input type="text" name="search" id="search">
-  <button  class = "btn-register" type="button">Cadastrar</button>
+  <a class = "btn-register" routerLink="/register" type="button">Cadastrar</a>
 </div>
 
 <div class="table-register">
@@ -13,17 +13,18 @@
       <td>Peso</td>
       <td>Aniversário</td>
       <td></td>
-    </tr>    
-    <tr>
-      <td>Nayara Fugii</td>    
-      <td>26 anos</td>   
-      <td>Programadora</td>    
-      <td>Matão</td>    
-      <td>78</td>   
-      <td>23/08/1994</td>    
+    </tr> 
+    <div></div>   
+    <tr *ngFor="let data of dataForm">
+      <td>{{data.name}}</td>    
+      <td>{{data.year}} anos</td>   
+      <td>{{data.profession}}</td>    
+      <td>{{data.city}}</td>    
+      <td>{{data.weight}} kg</td>   
+      <td>{{data.birthday}}</td>    
       <td>
-        <button class="btn-edit" type="button">Editar</button>
-        <button class="btn-delete" type="button">Excluir</button>
+        <a class="btn-edit" type="button" routerLink="/edit">Editar</a>
+        <button class="btn-delete" type="button" (click)="deleteData(data.id)">Excluir</button>
       </td>
     </tr> 
   </table>
