@@ -42,7 +42,6 @@ export class RegisterComponent implements OnInit {
   }
 
   createNewRegister(){
-    console.log(this.form)
     this.data = {
       name: this.form.value.name,
       profession: this.form.value.profession,
@@ -52,8 +51,7 @@ export class RegisterComponent implements OnInit {
       birthday:this.form.value.birthday,
 
     }
-    console.log(typeof(this.data))
-    this.http.create(this.data, this._url ).subscribe(result => console.log(result))
+    this.http.create(this.data, this._url ).subscribe(result => result)
   }
 
 }

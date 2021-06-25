@@ -1,27 +1,27 @@
 <div class="container-form">
-  <form action="">
+<form [formGroup]="form">
 
     <div class="container-first">
-      <label for="">Nome</label>
-        <input type="text">
+      <label>Nome</label>
+        <input type="text" formControlName="name" [(ngModel)]= data.name>
       <label for="">Profissão</label>
-        <input type="text">
+        <input type="text" formControlName="profession" [(ngModel)]= data.profession>
       <label for="">Peso</label>
-        <input type="text">
+        <input type="text" formControlName="weight" [(ngModel)]= data.weight>
     </div>
 
     <div class="container-second">
       <label for="">Idade</label>
-      <input type="text">
+      <input type="text" formControlName="year" [(ngModel)]= data.year>
     <label for="">Cidade de Nascimento</label>
-      <input type="text">
+      <input type="text" formControlName="city" [(ngModel)]= data.city>
     <label for="">Aniversário</label>
-      <input type="text">
+      <input type="date" formControlName="birthday" [(ngModel)]= data.birthday>
     </div>
 
     <div class="container-third">
       <a class="btn-cancel" routerLink="/">Cancelar</a>
-      <button class ="btn-save">Salvar</button>
+      <button class ="btn-save" (click)="updateData()" routerLink="/">Salvar</button>
     </div> 
 
   </form>

@@ -25,7 +25,6 @@ input{
     width: 30vw;
     height: 30px;
     border: 2px solid var(--border-input);
-    border-radius: 10px;
 }
 
 label{
@@ -47,12 +46,24 @@ label{
     margin-top: 50vh;
 }
 
+a:link{
+    text-decoration: none;
+  }
+
 .btn-cancel{
     color: var(--color-btn-delete);
     border: 1px solid var(--color-btn-delete);
+    padding: 1.8vh;
 }
 
 .btn-save{
     color: var(--background-btn-register);
     border: 1px solid var(--background-btn-register);
+}
+
+
+.btn-save, .btn-cancel, input{
+    cursor: pointer;
+    font-family: var(--font-family);
+    border-radius: 10px;
 }

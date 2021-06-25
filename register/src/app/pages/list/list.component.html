@@ -23,7 +23,8 @@
       <td>{{data.weight}} kg</td>   
       <td>{{data.birthday}}</td>    
       <td>
-        <a class="btn-edit" type="button" routerLink="/edit">Editar</a>
+        <a class="btn-edit" type="button" routerLink="/edit/{{data.id}}" idEdit = (data.id)
+        (click)="dataForEdit(data.id)">Editar</a> 
         <button class="btn-delete" type="button" (click)="deleteData(data.id)">Excluir</button>
       </td>
     </tr> 

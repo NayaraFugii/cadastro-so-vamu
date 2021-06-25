@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { HttpService } from "../register/shared/register.service"
 
 @Component({
@@ -9,17 +9,16 @@ import { HttpService } from "../register/shared/register.service"
 export class ListComponent implements OnInit {
 
   _url: string;
-  dataForm: any;
-  
-  
+  dataForm: any;  
 
   constructor( private http: HttpService) { 
     this._url="http://localhost:3000/post"
-  }
-  
+  }  
 
   ngOnInit() {
     this.getData()
+    
+
   }
 
 
