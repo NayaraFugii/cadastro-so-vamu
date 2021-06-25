@@ -10,7 +10,7 @@ import { ListComponent } from './pages/list/list.component';
 import { EditComponent } from './pages/edit/edit.component';
 import { HttpClientModule} from "@angular/common/http"
 
-import { HttpService} from "./pages/register/shared/register.service"
+import { HttpService} from "./pages/shared/register.service"
 import {Ng2SearchPipeModule} from "ng2-search-filter"
 import {NgbPaginationModule, NgbAlertModule} from "@ng-bootstrap/ng-bootstrap"
 

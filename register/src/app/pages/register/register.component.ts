@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms"
-import { Data } from "./shared/data.model"
+import { Data } from "../shared/data.model"
 
-import { HttpService } from "../register/shared/register.service"
+import { HttpService } from "../shared/register.service"
 
 @Component({
   selector: 'app-register',

@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Data } from '../register/shared/data.model';
+import { Data } from '../shared/data.model';
 
-import { HttpService} from "../register/shared/register.service"
+import { HttpService} from "../shared/register.service"
 import { ActivatedRoute} from "@angular/router"
 
 import { FormBuilder,FormGroup, Validators} from "@angular/forms"
@@ -35,11 +35,11 @@ export class EditComponent implements OnInit {
     this.getDataById()
 
     this.form = this.formBuilder.group({
-      name:[null,[Validators.required, Validators.minLength(4),Validators.maxLength(20)]],
-      profession:[null, [Validators.required, Validators.minLength(4), Validators.maxLength(20)]],
-      weight:[null, [Validators.required, Validators.minLength(2), Validators.maxLength(4)]],
-      year:[null, [Validators.required, Validators.minLength(2), Validators.maxLength(3)]],
-      city: [null, [Validators.required, Validators.minLength(3), Validators.maxLength(10)]],
+      name:[null,[Validators.required, Validators.minLength(4)]],
+      profession:[null, [Validators.required, Validators.minLength(4)]],
+      weight:[null, [Validators.required, Validators.minLength(2)]],
+      year:[null, [Validators.required, Validators.minLength(2)]],
+      city: [null, [Validators.required, Validators.minLength(3)]],
       birthday:[null, [Validators.required]],
     })
    

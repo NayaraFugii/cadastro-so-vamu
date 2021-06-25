@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { HttpService } from "../register/shared/register.service"
+import { HttpService } from "../shared/register.service"
 
 
 @Component({
@@ -17,8 +17,7 @@ export class ListComponent implements OnInit {
   }  
 
   ngOnInit() {
-    this.getData()
-    
+    this.getData()  
 
   }
 

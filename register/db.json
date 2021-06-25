@@ -3,7 +3,7 @@
     {
       "name": "Marcelo Dias Ferreira",
       "profession": "Maquinário",
-      "weight": "87",
+      "weight": "90",
       "year": "35",
       "city": "Cotia",
       "birthday": "1986-06-03",
@@ -17,15 +17,6 @@
       "city": "Valinhos",
       "birthday": "1991-10-30",
       "id": 5
-    },
-    {
-      "name": "Valeria Silva Costa",
-      "profession": "Do Lar",
-      "weight": "67,3",
-      "year": "47",
-      "city": "Cubatão",
-      "birthday": "1974-11-05",
-      "id": 6
     },
     {
       "name": "Caio Vinicius Oliveira",
@@ -53,6 +44,24 @@
       "city": "São Paulo",
       "birthday": "2000-05-02",
       "id": 9
+    },
+    {
+      "name": "Silvia Costa Souza",
+      "profession": "Assistente Administrativo",
+      "weight": "68,5",
+      "year": "29",
+      "city": "Araraquara",
+      "birthday": "1992-10-12",
+      "id": 10
+    },
+    {
+      "name": "Fernando Braga",
+      "profession": "Professor",
+      "weight": "70",
+      "year": "32",
+      "city": "Florianópolis",
+      "birthday": "1988-09-23",
+      "id": 11
     }
   ]
 }
