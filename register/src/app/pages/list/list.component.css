@@ -93,3 +93,20 @@ a:link{
 .index-filter{
     display: none;
 }
+
+.btn-delete:hover{
+    transition: 0.5s;
+    background-color: var(--color-btn-delete);
+    color: var(--font-color-title);
+}
+
+.btn-edit:hover{
+    transition: 0.5s;
+    background-color: var(--color-btn-edit);
+    color: var(--font-color-title);
+}
+
+.btn-register:hover{
+    transition: 0.7s;
+   font-size: 1.3rem;
+}

@@ -47,12 +47,45 @@ label{
     margin-top: 50vh;
 }
 
+a:link{
+    text-decoration: none;
+  }
+
 .btn-back{
     color: var(--color-btn-edit);
     border: 1px solid var(--color-btn-edit);
+    padding: 1.5vh 2.8vh;
+   
 }
 
 .btn-save{
     color: var(--background-btn-register);
     border: 1px solid var(--background-btn-register);
 }
+span{
+    color: var(--color-btn-delete);
+}
+
+.btn-save:hover{
+    transition: 0.5s;
+    background-color: var(--background-btn-register);
+    color: var(--font-color-title);
+}
+
+.btn-back:hover{
+    transition: 0.5s;
+    background-color: var(--color-btn-edit);
+    color: var(--font-color-title);
+}
+
+.btn-save:disabled{
+    color: gray;
+    border-color: gray;
+
+}
+.btn-save:hover:disabled{
+    background-color: white;
+    color: gray;
+    
+}
+

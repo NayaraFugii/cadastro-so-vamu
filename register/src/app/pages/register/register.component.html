@@ -4,24 +4,42 @@
     <div class="container-first">
       <label for="">Nome</label>
         <input type="text" formControlName="name">
+      <span *ngIf = "form.controls.name.touched && !form.controls.name.valid">
+        Preencimento obrigatório com no minimo 4 carateres
+      </span>
       <label for="">Profissão</label>
         <input type="text" formControlName="profession">
+        <span *ngIf = "form.controls.profession.touched && !form.controls.profession.valid">
+          Preencimento obrigatório com no minimo 4 carateres
+        </span>
       <label for="">Peso</label>
         <input type="text" formControlName="weight">
+        <span *ngIf = "form.controls.weight.touched && !form.controls.weight.valid">
+          Preencimento obrigatório com no minimo 2 carateres
+        </span>
     </div>
 
     <div class="container-second">
       <label for="">Idade</label>
       <input type="text" formControlName="year">
+      <span *ngIf = "form.controls.year.touched && !form.controls.year.valid">
+        Preencimento obrigatório com no minimo 2 carateres
+      </span>
     <label for="">Cidade de Nascimento</label>
       <input type="text" formControlName="city">
+      <span *ngIf = "form.controls.city.touched && !form.controls.city.valid">
+        Preencimento obrigatório com no minimo 3 carateres
+      </span>
     <label for="">Aniversário</label>
       <input type="date" formControlName="birthday">
+      <span *ngIf = "form.controls.birthday.touched && !form.controls.birthday.valid">
+        Preencimento obrigatório 
+      </span>
     </div>
 
     <div class="container-third">
       <a class="btn-back" routerLink="/" type="">Voltar</a>
-      <button class ="btn-save" (click)="createNewRegister()" routerLink="/">Salvar</button>
+      <button [disabled]  ="!form.valid"class ="btn-save" (click)="createNewRegister()" routerLink="/">Salvar</button>
     </div> 
 
   </form>

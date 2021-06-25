@@ -28,11 +28,11 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
 
     this.form = this.formBuilder.group({
-      name:[null,[Validators.required, Validators.minLength(4),Validators.maxLength(20)]],
-      profession:[null, [Validators.required, Validators.minLength(4), Validators.maxLength(20)]],
-      weight:[null, [Validators.required, Validators.minLength(2), Validators.maxLength(4)]],
-      year:[null, [Validators.required, Validators.minLength(2), Validators.maxLength(3)]],
-      city: [null, [Validators.required, Validators.minLength(3), Validators.maxLength(10)]],
+      name:[null,[Validators.required, Validators.minLength(4)]],
+      profession:[null, [Validators.required, Validators.minLength(4)]],
+      weight:[null, [Validators.required, Validators.minLength(2)]],
+      year:[null, [Validators.required, Validators.minLength(2)]],
+      city: [null, [Validators.required, Validators.minLength(3)]],
       birthday:[null, [Validators.required]],
     })
       this._url="http://localhost:3000/post"
@@ -42,6 +42,7 @@ export class RegisterComponent implements OnInit {
   }
 
   createNewRegister(){
+    console.log(this.form)
     this.data = {
       name: this.form.value.name,
       profession: this.form.value.profession,

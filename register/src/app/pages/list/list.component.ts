@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { HttpService } from "../register/shared/register.service"
 
+
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',

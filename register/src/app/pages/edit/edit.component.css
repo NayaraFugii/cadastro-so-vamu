@@ -67,3 +67,31 @@ a:link{
     font-family: var(--font-family);
     border-radius: 10px;
 }
+
+.btn-save:disabled{
+    color: gray;
+    border-color: gray;
+
+}
+.btn-save:hover:disabled{
+    background-color: white;
+    color: gray;
+    
+}
+
+
+.btn-save:hover{
+    transition: 0.5s;
+    background-color: var(--background-btn-register);
+    color: var(--font-color-title);
+}
+
+.btn-cancel:hover{
+    transition: 0.5s;
+    background-color: var(--color-btn-delete);
+    color: var(--font-color-title);
+}
+span{
+    color: var(--color-btn-delete);
+}
+

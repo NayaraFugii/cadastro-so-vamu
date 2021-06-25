@@ -12,6 +12,7 @@ import { HttpClientModule} from "@angular/common/http"
 
 import { HttpService} from "./pages/register/shared/register.service"
 import {Ng2SearchPipeModule} from "ng2-search-filter"
+import {NgbPaginationModule, NgbAlertModule} from "@ng-bootstrap/ng-bootstrap"
 
 
 @NgModule({
@@ -27,7 +28,9 @@ import {Ng2SearchPipeModule} from "ng2-search-filter"
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+    NgbAlertModule,
+    NgbPaginationModule
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]

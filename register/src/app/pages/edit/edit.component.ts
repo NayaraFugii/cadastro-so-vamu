@@ -46,6 +46,7 @@ export class EditComponent implements OnInit {
   }
 
   getDataById(){
+    console.log(typeof(Data))
     const id = this.activetedRoute.snapshot.params.id
     this.idUpdate = id
     console.log(`${this._url}/${this.idUpdate}`)

@@ -39,8 +39,10 @@ import { EventEmitter } from "events";
 
         deleteRegister(_url: string): Observable<object>{
             return this.http.delete<object>(_url)
-        }    
-        updateRegister(_url: string, data: object): Observable<object>{
+        }   
+        
+        
+        updateRegister(_url: string, data): Observable<object>{
             return this.http.put(_url, data)
         }     
             
