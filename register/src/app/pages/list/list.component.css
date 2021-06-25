@@ -89,3 +89,7 @@ a:link{
     font-family: var(--font-family);
     border-radius: 10px;
 }
+
+.index-filter{
+    display: none;
+}

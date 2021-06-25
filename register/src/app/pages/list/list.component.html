@@ -1,5 +1,5 @@
 <div class="search-data">
-  <input type="text" name="search" id="search">
+  <input type="text" name="search" id="search" [(ngModel)]="filter">
   <a class = "btn-register" routerLink="/register" type="button">Cadastrar</a>
 </div>
 
@@ -15,7 +15,8 @@
       <td></td>
     </tr> 
     <div></div>   
-    <tr *ngFor="let data of dataForm">
+    <tr *ngFor="let data of dataForm | filter:filter; let i = index">
+      <td class = "index-filter">{{i}}</td>
       <td>{{data.name}}</td>    
       <td>{{data.year}} anos</td>   
       <td>{{data.profession}}</td>    

@@ -11,6 +11,7 @@ import { EditComponent } from './pages/edit/edit.component';
 import { HttpClientModule} from "@angular/common/http"
 
 import { HttpService} from "./pages/register/shared/register.service"
+import {Ng2SearchPipeModule} from "ng2-search-filter"
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { HttpService} from "./pages/register/shared/register.service"
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    Ng2SearchPipeModule
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]
